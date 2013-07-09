@@ -8,7 +8,8 @@ app.get('/', function(request, response) {
       var buffer = new Buffer(16);
       buffer.write(data, "utf-8");
       response.send(data.toString());
-  }
+  });
+  // response.send('Hello world 2!');     
 });
 
 var port = process.env.PORT || 5000;
